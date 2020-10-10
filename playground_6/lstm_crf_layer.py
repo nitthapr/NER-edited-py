@@ -6,8 +6,12 @@ bert-blstm-crf layer
 """
 
 import tensorflow as tf
-from tensorflow.contrib import rnn
-from tensorflow.contrib import crf
+
+# -- Olunlah
+from tensorflow.compat.v1.contrib import rnn
+from tensorflow.compat.v1.contrib import crf
+# from tensorflow.contrib import rnn
+# from tensorflow.contrib import crf
 
 
 class BLSTM_CRF(object):
